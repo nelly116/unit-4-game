@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Crystal Game Homework</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1>Crystal Collector</h1>
+            </div>
+
+            <!-- row for instruction box -->
+            <div class="row" id="instruct">
+                <div class="col-md-2">
+                    <img src="gemRed" src="assets/images/gemRed.jpg" class="sideImg" alt=" Red crystal ">
+                </div>
+
+                <div class="col-md-8 ">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p> Each of the four crystals below will add a certain amount of points to your total score. </p>
+                    <p>You win the game if your total score matches the random number, and lose if your total score goes above
+                        it. </p>
+                    <p>The value of each crystal changes after game end. This value is random from 1 to 12 and is hidden from
+                        you.
+                    </p>
+                </div>
+
+                <div class="col-md-2 ">
+                    <img src="gemBlue " src="assets/images/gemBlue.jpg " class="sideImg " alt="Blue crystal ">
+                </div>
+            </div>
+
+            <!-- row for scores and records -->
+            <div class="row " id="infoRow ">
+
+                <div class="col-md-4 ">
+                    <h3 class="labelBox ">Target Number</h3>
+                    <h2 id="targetNumber "></h2>
+                </div>
+
+                <div class="col-md-4 ">
+                    <h3 class="labelBox ">Current Total</h3>
+                    <h2 id="scoreBox "></h2>
+                </div>
+
+                <div class="col-md-4 ">
+                    <h3 class="labelBox ">Score</h3>
+                    <h2 id="winLoss "></h2>
+
+                </div>
+
+            </div>
+
+            <!--row for crystal buttons-->
+            <div id="buttonRow " class="row ">
+                <div class="col-md-3 ">
+                    <input type="image " class="crystalBtn " id="btnOne " src="assets/images/gemGreen" alt="Yellow
+                        crystal ">
+                </div>
+
+                <div class="col-md-3 ">
+                    <input type="image " class="crystalBtn " id="btnTwo " src="assets/images/gemRed.jpg " alt="Red crystal ">
+
+                </div>
+
+                <div class="col-md-3 ">
+                    <input type="image " class="crystalBtn " id="btnThree " src="assets/images/gemBlue.jpg " alt="Blue
+                        crystal ">
+                </div>
+
+                <div class="col-md-3 ">
+                    <input type="image " class="crystalBtn " id="btnFour " src="assets/images/gemGreen.jpg " alt="Green
+                        crystal ">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin=" anonymous "></script>
+    <script type="text/javascript " src="assets/javascript/game.js "></script>
+
+</body>
